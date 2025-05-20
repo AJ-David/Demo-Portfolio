@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #8b0000c2;
+            padding: 0 30px;
+        }
+        .thank-you {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .thank-you-div {
+            background-color: #ee1e1e;
+            border-radius: 20px;
+            padding: 50px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .thank-you .appreciation {
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .thank-you p {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+        }
+
+        .thank-you a {
+            font-size: 22px;
+            color: #580404;
+            text-decoration: none;
+        }
+
+        .thank-you a:hover {
+            text-decoration: underline;
+        }
+
+        .back {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .back img {
+            width: 28px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="thank-you">
+        <div class="thank-you-div">
+            <div class="appreciation">Thank you!</div>
+            <p>Your message has been received. I appreciate you taking the time to reach out.</p>
+            <p>I’ll get back to you as soon as possible.</p>
+            <div class="back">
+                <img src="images/left-arrow.png" alt="">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
